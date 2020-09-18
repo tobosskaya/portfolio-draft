@@ -46,11 +46,8 @@ span{
     color: #263742;
     font-size: 14px;
     font-weight: 400;
-    padding-right: 40px;
+    padding-right: 30px;
     padding-top: 29px;
-}
-.menu__subsection-icon{
-    color: #fa5c65;
 }
 .presentation__about-us{
     width: 510px;
@@ -173,6 +170,7 @@ span{
 }
 .our-team__person-photo{
     width: 50%;
+    padding-right: 10px;
 }
 .our-team__person-description{
     width: 50%;
