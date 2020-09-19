@@ -18,7 +18,7 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 80vw;
 }
 .menu{
     display: flex;
@@ -79,7 +79,7 @@ span{
 }
 .our-princeples__layout{
     display: flex;
-    display: space-between;
+    justify-content: space-between;
     padding-top: 50px;
 }
 .our-principles__title{
@@ -169,8 +169,8 @@ span{
     display: flex;
 }
 .our-team__person-photo{
-    width: 50%;
-    padding-right: 10px;
+    width: 125px;
+    padding-right: 20px;
 }
 .our-team__person-description{
     width: 50%;
@@ -193,4 +193,117 @@ span{
     font-family: "Open Sans";
     font-size: 13px;
     font-weight: 400;
+}
+
+.test-field {
+    border: 1px solid red;
+    outline: none;
+}
+
+.test-field:focus {
+    border: 1px solid green;
+}
+#test {
+    display: none;
+}
+#test:checked + .test-content {
+    display: none;
+}
+
+/* button:active {
+    background-color: red;
+} */
+
+/* button:focus {
+    background-color: red;
+} */
+
+
+/* button ~ div {
+    background-color: turquoise;
+} */
+
+.gallery-window {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.button-1 {
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+
+.button-2 {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+
+.button-3 {
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+}
+
+.button-4 {
+    width: 50px;
+    height: 50px;
+    background-color: turquoise;
+}
+
+.button-2 ~ div {
+    background-color: thistle;
+}
+
+
+.button-1:focus ~ div {
+
+    background-color: rebeccapurple;
+}
+
+.button-2:focus ~ div {
+
+    background-color: brown;
+}
+
+.button-3:focus ~ div {
+
+    background-color: greenyellow;
+}
+
+.button-4:focus ~ div {
+
+    background-color: turquoise;
+}
+
+.template {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-auto-rows: 100px;
+    grid-row-gap: 100px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5 {
+    background-color: teal;
+}
+
+.item-6 {
+    background-color: violet;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5
+}
+
+.item-7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: yellowgreen;
 }
